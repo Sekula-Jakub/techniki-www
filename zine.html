@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>ZIN Pokazy Lotnicze nr 1</title>
+</head>
+<body>
+    <header>
+        <h1> POKAZY LOTNICZE nr 1</h1>
+    </header>
+    <h2>Spis treści</h2>
+    <nav>
+        <ul>
+            <li><a href="#articleGForce">Zespół akrobacyjny G-Froce</a></li>
+            <li><a href="#book">Książka założyciela zespołu</a></li>
+            <li><a href="#airplanes">Samoloty występujące na pokazie</a></li>
+            <li><a href="#schedule">Grafik pokazów i atrakcji</a></li>
+            <li><a href="#form">Formularz po darmowy bilet wstępu</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2 id="articleGForce">Zespół akrobacyjny G-Force - początki kariery</h2>
+        <article>
+            Artykuł o zespole akrobacyjnym.
+        </article>
+        <h2 id="book">Książka założyciela zespołu - kpt. Mirosława</h2>
+        <aside>
+            Książka założyciela zespołu G-force - kpt. Mirosława - dostępna juz w sprzedaży
+        </aside>
+        <h2 id="airplanes">Samoloty które wystąpią na pokazie</h2>
+        <ul>
+            <li>Eurofighter Typhoon</li>
+            <li>F-16 Fighting Falcon</li>
+            <li>Extra 330SC</li>
+            <li>Sukhoi Su-31</li>
+            <li>Zivko Edge 540</li>
+        </ul>
+        <h2 id="schedule">Grafik pokazów i atrakcji</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Godzina</th>
+                    <th scope="col">Wydarzenie</th>
+                    <th scope="col">Gdzie</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>11:00 - 11:15</td><td>Przelot zespołu "Eagles"</td></tr>
+                <tr><td>11:30 - 12:30</td><td>Wykład kpt. Mirosława</td><td>Hangar nr 2</td></tr>
+                <tr><td>13:00 - 13:15</td><td>Przelot samolotów Eurofighter</td></tr>
+                <tr><td>15:00 - 17:00</td><td>Symulator F16</td><td>Hangar nr 1</td></tr>
+                <tr><td>17:15 - 17:45</td><td>Przelot zespołu "G-Force"</td></tr>
+            </tbody>
+        </table>
+        <h2 id="form">Wypełnij formularz i otrzymaj bilet wstępu</h2>
+        <form action="/getTicket" method="post">
+            <label for="mail">E-mail</label>
+            <input id="mail" name="mail" type="email" required>
+            <label for="name">Imie</label>
+            <input id="name" name="name" type="text" required>
+            <label for="lastname">Nazwisko</label>
+            <input id="lastname" name="lastname" type="text" required>
+            <button type="submit">Otrzymaj bilet</button>
+        </form>
+        <footer>
+            &reg Pokazy Lotnicze
+        </footer>
+    </main>
+</body>
+</html>
